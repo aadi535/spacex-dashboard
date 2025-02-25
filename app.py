@@ -8,7 +8,8 @@ st.set_page_config(page_title="🚀 SpaceX Launch Dashboard", layout="wide")
 # Load data function
 @st.cache_data
 def load_data():
-    file_path = "D:/NASA_Meteorite_Dashboard/spacex_launch_data_fixed.csv"  # Update this path if needed
+    file_path = "spacex_launch_data_fixed.csv"
+  # Update this path if needed
     if not os.path.exists(file_path):  # Check if file exists
         st.error(f"🚨 Error: Dataset file not found at: {file_path}")
         return pd.DataFrame()  # Return empty DataFrame
